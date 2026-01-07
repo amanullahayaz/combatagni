@@ -1,0 +1,243 @@
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
+               'Segoe UI', Roboto, Oxygen, Ubuntu, 
+               Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #222;
+}
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+:root {
+  --bs-body-font-family: 'Inter', system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --brand-red: #c62828;
+  --brand-dark: #1c1c1c;
+}
+
+/* =========================
+   Bootstrap Overrides
+========================= */
+.btn-primary {
+  background-color: var(--brand-red);
+  border-color: var(--brand-red);
+}
+
+.text-primary {
+  color: var(--brand-red) !important;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+/* =========================
+   HERO SECTION (FINAL FIX)
+========================= */
+
+/* Main hero height */
+.hero-section {
+  height: 90vh;
+  min-height: 500px; /* safety for small screens */
+}
+
+/* IMPORTANT: force carousel full height */
+.hero-carousel,
+.hero-carousel .carousel-inner,
+.hero-carousel .carousel-item {
+  height: 100%;
+}
+
+/* Background image container */
+.hero-bg {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+/* Overlay */
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.65)
+  );
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.navbar .nav-link.active {
+  color: #fff !important;
+  font-weight: 500;
+  border-bottom: 2px solid var(--brand-red);
+}
+
+/* About Section Styling */
+/* About Page */
+
+.about-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.about-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.about-list li {
+  margin-bottom: 10px;
+}
+
+.info-box {
+  background: #ffffff;
+  padding: 25px;
+  /* bordertruck: 1px solid #eee; */
+  border-radius: 8px;
+}
+
+.leader-box {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+}
+
+.why-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  height: 100%;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+}
+
+.why-box h6 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 56px;
+  height: 56px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floating-whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+}
+
+/* Contact Page Polish */
+
+.contact-info-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.contact-info-box p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contact-form-box {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.contact-form-box .form-control {
+  padding: 12px 14px;
+  font-size: 0.95rem;
+}.contact-info-box .btn-success {
+  padding: 4px 10px;
+  font-size: 0.75rem;
+}
+
+
+.contact-form-box .btn-primary {
+  padding: 12px 28px;
+}
+
+/* Section Title */
+.section-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: var(--brand-red);
+  display: block;
+  margin: 8px auto 0;
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Footer */
+
+.footer-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-list li {
+  margin-bottom: 6px;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #f5f5f5;
+}
+
+
+footer .btn-sm {
+  padding: 3px 8px;
+  font-size: 0.7rem;
+}
+
+
+/* =========================
+   Responsive tweak
+========================= */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 70vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+}

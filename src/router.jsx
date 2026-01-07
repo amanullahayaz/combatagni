@@ -1,0 +1,16 @@
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import ProductsPage from "./pages/ProductsPage";
+
+export default function Router() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/products" element={<ProductsPage />} />
+      <Route path="/contact" element={<ContactPage />} />
+    </Routes>
+  );
+}
