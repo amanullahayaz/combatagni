@@ -31,7 +31,7 @@ export default function WhyChooseUs() {
   return (
     <section className="section-padding">
       <Container>
-        <h2 className="text-center mb-5">Why Choose Us</h2>
+        <h2 className="text-center mb-5">Why Choose Us?</h2>
 
         <Row className="g-4">
           {reasons.map((item, index) => (
