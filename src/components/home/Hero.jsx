@@ -16,7 +16,7 @@ export default function Hero() {
           <div
             className="hero-bg"
             style={{
-              backgroundImage: "url('/images/hero/hero-1.png')",
+              backgroundImage: "url('/images/hero/hero-1.jpeg')",
             }}
           >
             <div className="hero-overlay">

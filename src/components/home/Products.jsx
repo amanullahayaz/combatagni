@@ -14,78 +14,80 @@ const products = [
     name: "Smoke Detector",
     desc: "Detects smoke particles and triggers alarm instantly.",
     shortDesc: "Early fire detection device installed on ceilings.",
-    img: "/images/products/smoke-detector.png"
+    img: "/images/products/smoke-detector.jpeg"
   },
+
   {
     id: 3,
-    name: "Heat Detector",
-    desc: "Detects abnormal temperature rise.",
-    shortDesc: "Activates alarm when temperature exceeds safe limits.",
-    img: "/images/products/heat-detector.png"
+   name: "Strobe Hooter",
+  desc: "Audio-visual alarm with loud hooter and flashing strobe light.",
+  shortDesc: "Provides loud sound and flashing light for emergency warning.",
+    img: "/images/products/strobe-hooter.png"
   },
   {
     id: 4,
-    name: "Analogue Heat Detector",
-    desc: "Advanced heat sensing detector for precision.",
-    shortDesc: "Provides accurate temperature monitoring.",
-    img: "/images/products/analog.jpeg"
-  },
-  {
-    id: 5,
     name: "Manual Call Point (MCP)",
     desc: "Manual fire alarm activation device.",
     shortDesc: "Allows manual triggering of fire alarm during emergencies.",
     img: "/images/products/MCB.webp"
   },
   {
-    id: 6,
+    id: 7,
     name: "Industrial Hooter",
     desc: "High-decibel hooter for industrial alerts.",
     shortDesc: "Used for loud audible warning in factories and plants.",
     img: "/images/products/industrialhooter.jpeg"
   },
   {
-    id: 7,
+    id: 8,
     name: "AC Siren",
     desc: "Powerful siren for fire alarm systems.",
     shortDesc: "Produces high-intensity sound alerts.",
     img: "/images/products/ac-siren-1.webp"
   },
   {
-    id: 8,
+    id: 9,
     name: "Combo Hooter",
     desc: "Hooter with combined alarm functions.",
     shortDesc: "Combines sound and alert signals in one unit.",
-    img: "/images/products/combohooter.webp"
+    img: "/images/products/combo-hooter.jpeg"
   },
   {
-    id: 9,
+    id: 10,
     name: "Emergency Exit Light",
     desc: "Illuminated exit signage for emergencies.",
     shortDesc: "Guides occupants safely during evacuation.",
     img: "/images/products/emergency.webp"
   },
   {
-    id: 10,
+    id: 11,
     name: "Fire Response Indicator",
     desc: "Indicates fire response and alarm location.",
     shortDesc: "Shows exact zone or location of fire alarm.",
     img: "/images/products/fire-response-indicator.webp"
   },
   {
-    id: 11,
+    id: 12,
     name: "Fire Fighting Panel",
     desc: "Control panel for firefighting systems.",
     shortDesc: "Manages firefighting equipment operations.",
     img: "/images/products/firefightingpanel.webp"
   },
   {
-    id: 12,
+    id: 13,
     name: "Fire Fighting Equipment",
     desc: "Essential firefighting safety equipment.",
     shortDesc: "Supports manual fire suppression activities.",
     img: "/images/products/firefightingequip.webp"
-  }
+  },
+  {
+  id: 14,
+  name: "Standalone Smoke Detector",
+  desc: "A battery-operated independent smoke detection device designed for early fire warning", 
+  shortDesc: "Independent smoke detector providing early fire alerts without panel connection.",
+  img: "/images/products/standalone.jpeg"
+}
+
 ];
 
 export default function Products() {
