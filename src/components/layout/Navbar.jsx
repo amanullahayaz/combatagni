@@ -8,17 +8,26 @@ export default function MainNavbar() {
       bg="dark"
       variant="dark"
       sticky="top"
-      collapseOnSelect
     >
       <Container>
-        {/* LOGO */}
-        <Navbar.Brand as={NavLink} to="/">
+        <Navbar.Brand
+          as={NavLink}
+          to="/"
+          className="d-flex align-items-center gap-2"
+        >
           <img
             src="/images/logo.png"
-            height="40"
+            height="42"
             alt="Combat Agni Fire Solutions"
           />
+
+          <div className="brand-text">
+            <span className="brand-name">Combat Agni</span>
+            <span className="brand-tagline">Fire Solutions</span>
+          </div>
         </Navbar.Brand>
+
+
 
         <Navbar.Toggle aria-controls="main-navbar" />
 
@@ -29,7 +38,7 @@ export default function MainNavbar() {
             </Nav.Link>
 
             <Nav.Link as={NavLink} to="/about">
-              About
+              About Us
             </Nav.Link>
 
             <Nav.Link as={NavLink} to="/products">
@@ -37,7 +46,7 @@ export default function MainNavbar() {
             </Nav.Link>
 
             <Nav.Link as={NavLink} to="/contact">
-              Contact
+              Contact Us
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

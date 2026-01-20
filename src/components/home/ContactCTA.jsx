@@ -1,4 +1,5 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function ContactCTA() {
   return (
@@ -16,9 +17,9 @@ export default function ContactCTA() {
           </Col>
 
           <Col md={4} className="text-md-end mt-3 mt-md-0">
-            <Button variant="primary" href="/contact">
-              Contact Us
-            </Button>
+            <Button as={Link} to="/contact" variant="primary">
+                  Contact Us
+                </Button>
           </Col>
         </Row>
       </Container>

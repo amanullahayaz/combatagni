@@ -1,4 +1,5 @@
 import { Container, Button, Carousel } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -20,11 +21,13 @@ export default function Hero() {
           >
             <div className="hero-overlay">
               <Container>
-                <h1 className="fw-bold display-5">
+                {<h1 className="fw-bold display-5">
                   Complete Fire Safety Solutions
-                </h1>
+                </h1> }
                 <p className="lead">The Science of Prevention</p>
-                <Button variant="primary">Get Quote</Button>
+                <Button as={Link} to="/contact" variant="primary">
+                  Get Quote
+                </Button> 
               </Container>
             </div>
           </div>
@@ -46,7 +49,9 @@ export default function Hero() {
                 <p className="lead">
                   Reliable • Certified • Trusted
                 </p>
-                <Button variant="primary" href="products">View Products</Button>
+                <Button as={Link} to="/products" variant="primary">
+                  View Products
+                </Button>
               </Container>
             </div>
           </div>
@@ -57,7 +62,7 @@ export default function Hero() {
           <div
             className="hero-bg"
             style={{
-              backgroundImage: "url('/images/hero/hero-3.jpeg')",
+              backgroundImage: "url('/images/hero/hero-3.png')",
             }}
           >
             <div className="hero-overlay">
@@ -66,7 +71,9 @@ export default function Hero() {
                   Protecting Life & Property
                 </h1>
                 <p className="lead">Since 2012</p>
-                <Button variant="primary" href="/contact">Contact Us</Button>
+                <Button as={Link} to="/contact" variant="primary">
+                  Contact Us
+                </Button>
               </Container>
             </div>
           </div>

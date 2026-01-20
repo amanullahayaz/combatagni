@@ -80,6 +80,26 @@ h1, h2, h3, h4, h5 {
   font-weight: 500;
   border-bottom: 2px solid var(--brand-red);
 }
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.brand-tagline {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #f97316; /* fire orange */
+  letter-spacing: 0.6px;
+}
+
 
 /* About Section Styling */
 /* About Page */

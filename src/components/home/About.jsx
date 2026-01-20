@@ -1,5 +1,5 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
-
+import {Link} from "react-router-dom";
 export default function About() {
   return (
     <section className="section-padding">
@@ -24,7 +24,8 @@ export default function About() {
               detection and prevention technologies.
             </p>
 
-            <Button variant="primary" href="/about" >Read More</Button>
+            <Button as={Link} to="/about" variant = "primary">Read More</Button>
+             
           </Col>
 
           <Col md={6}>
