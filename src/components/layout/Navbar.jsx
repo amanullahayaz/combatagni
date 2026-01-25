@@ -15,7 +15,7 @@ export default function MainNavbar() {
           to="/"
           className="d-flex align-items-center gap-2"
         >
-          <img
+          <img className="logo"
             src="/images/logo.png"
             height="60"
             alt="Combat Agni Fire Solutions"
