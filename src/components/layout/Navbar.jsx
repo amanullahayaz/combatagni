@@ -17,7 +17,7 @@ export default function MainNavbar() {
         >
           <img
             src="/images/logo.png"
-            height="42"
+            height="60"
             alt="Combat Agni Fire Solutions"
           />
 
